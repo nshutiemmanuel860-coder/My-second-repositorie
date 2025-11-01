@@ -1,1 +1,176 @@
-# My-second-repositorie
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDA School Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e40af;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    nav {
+      background-color: #2563eb;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      background-color: white;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #e5e7eb;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #1e40af;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KDA School Portal</h1>
+    <p>Student Management and Contact System</p>
+  </header>
+
+  <nav>
+    <a href="#students">Students</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <section id="students">
+    <h2>Student Records</h2>
+    <table>
+      <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Assignment 1</th>
+        <th>Assignment 2</th>
+        <th>Attendance Days</th>
+        <th>Exam Score</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>John</td>
+        <td>11A</td>
+        <td>80</td>
+        <td>75</td>
+        <td>18</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Jane</td>
+        <td>11B</td>
+        <td>70</td>
+        <td>65</td>
+        <td>20</td>
+        <td>78</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>David</td>
+        <td>11C</td>
+        <td>90</td>
+        <td>88</td>
+        <td>22</td>
+        <td>92</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KDA School | Designed by Nshuti</p>
+  </footer>
+
+</body>
+</html>
